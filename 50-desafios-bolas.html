@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="50 desafios práticos com bolas para desenvolver equilíbrio e coordenação do seu filho brincando. Para crianças de 3 a 10 anos.">
+<title>50 Desafios com Bolas: Equilíbrio, Coordenação e Diversão</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink:   '#1B2A4A',
+          court: '#2456E6',
+          ball:  '#FF7A1A',
+          sun:   '#FFC53D',
+          grass: '#12A150',
+          soft:  '#F5F8FF'
+        },
+        fontFamily: {
+          display: ['"Baloo 2"','cursive'],
+          sans:    ['Nunito','sans-serif']
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family:'Nunito',sans-serif; }
+
+  /* FAQ */
+  .accordion-content { max-height:0; overflow:hidden; transition:max-height .3s ease; }
+  .faq.open .accordion-content { max-height:400px; }
+  .faq.open .faq-icon { transform:rotate(180deg); }
+  .faq-icon { transition:transform .25s ease; display:inline-block; }
+
+  /* Bounce hero */
+  .bounce-soft { animation:bounceSoft 2.4s ease-in-out infinite; }
+  @keyframes bounceSoft { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  @media (prefers-reduced-motion:reduce){ .bounce-soft{animation:none} }
+
+  /* Carrossel */
+  #carousel-track { display:flex; transition:transform .5s cubic-bezier(.4,0,.2,1); will-change:transform; }
+  .slide { min-width:100%; box-sizing:border-box; }
+
+  .dot { width:8px; height:8px; border-radius:50%; background:#2456E640; transition:background .25s, width .25s; }
+  .dot.active { background:#2456E6; width:22px; border-radius:9999px; }
+
+  /* Benefícios ícone */
+  .benefit-icon { width:44px; height:44px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.4rem; flex-shrink:0; }
+</style>
+</head>
+<body class="bg-white text-ink">
+
+<!-- Barra de oferta -->
+<div class="bg-ball text-white text-center text-sm font-bold py-2.5 px-4">
+  🔥 Oferta especial: acesso imediato por apenas R$ 47 hoje!
+</div>
+
+<!-- ═══════ 1. HERO ═══════ -->
+<header class="bg-gradient-to-b from-soft to-white">
+  <div class="max-w-2xl mx-auto px-5 pt-10 pb-12 text-center">
+
+    <span class="inline-block bg-court/10 text-court text-xs font-extrabold px-4 py-1.5 rounded-full uppercase tracking-wide">Para crianças de 3 a 10 anos</span>
+
+    <h1 class="font-display text-3xl md:text-5xl font-extrabold leading-tight mt-4">
+      Desenvolva o <span class="text-court">equilíbrio e a coordenação</span> do seu filho com apenas <span class="text-ball">1 bola</span> e 15 minutos por dia.
+    </h1>
+
+    <p class="mt-4 text-base md:text-lg text-ink/70 max-w-xl mx-auto">
+      50 desafios práticos e progressivos com bolas que transformam a brincadeira em estímulo real de equilíbrio, coordenação motora e confiança. Em casa, no quintal ou no parque, sem comprar nenhum equipamento caro.
+    </p>
+
+    <img
+      src="https://raw.githubusercontent.com/guiadeatividadesmotoras/kids/main/NkYBP.jpg"
+      alt="50 Desafios com Bolas"
+      class="rounded-2xl shadow-xl mt-7 w-full max-w-sm mx-auto"
+      loading="eager"
+    >
+
+    <a href="#incluso"
+      class="bounce-soft mt-7 inline-block bg-ball hover:bg-orange-600 active:bg-orange-700 text-white font-extrabold text-lg px-8 py-4 rounded-2xl shadow-lg shadow-ball/30 transition w-full sm:w-auto">
+      ⚽ VER TUDO QUE ESTÁ INCLUSO ↓
+    </a>
+    <p class="mt-3 text-xs text-ink/50">🔒 Pagamento seguro · Acesso imediato · Garantia de 7 dias</p>
+  </div>
+</header>
+
+<!-- ═══════ 2. DORES ═══════ -->
+<section class="bg-soft py-12">
+  <div class="max-w-2xl mx-auto px-5 text-center">
+    <p class="text-court font-extrabold text-sm uppercase tracking-wide">Você se identifica com isso?</p>
+    <h2 class="font-display text-2xl md:text-3xl font-extrabold mt-2">Já se preocupou com alguma dessas situações?</h2>
+
+    <div class="grid sm:grid-cols-2 gap-4 mt-7 text-left">
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-ink/5">
+        <span class="text-3xl">🤸</span>
+        <p class="font-bold mt-2">Seu filho tropeça, cai com facilidade ou parece "desajeitado" comparado aos coleguinhas</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-ink/5">
+        <span class="text-3xl">⚽</span>
+        <p class="font-bold mt-2">Ele tem dificuldade para pegar, arremessar ou chutar uma bola e evita brincadeiras por vergonha</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-ink/5">
+        <span class="text-3xl">📱</span>
+        <p class="font-bold mt-2">Passa horas na tela e você não sabe como trazer ele para o movimento sem briga</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-sm border border-ink/5">
+        <span class="text-3xl">🤷</span>
+        <p class="font-bold mt-2">Você quer brincar e estimular, mas não sabe quais atividades realmente desenvolvem</p>
+      </div>
+    </div>
+
+    <p class="mt-7 text-ink/70 max-w-xl mx-auto">
+      Equilíbrio e coordenação não são "dom" são <strong>habilidades treináveis</strong>. E a bola é a ferramenta mais barata, divertida e completa que existe para isso.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════ 3. BENEFÍCIOS DOS DESAFIOS ═══════ -->
+<section class="py-12 bg-white">
+  <div class="max-w-2xl mx-auto px-5 text-center">
+    <p class="text-ball font-extrabold text-sm uppercase tracking-wide">O que cada desafio desenvolve</p>
+    <h2 class="font-display text-2xl md:text-3xl font-extrabold mt-2">Por que brincar com bola <span class="text-court">faz tanto bem</span></h2>
+
+    <div class="mt-7 space-y-3 text-left">
+
+      <div class="flex items-center gap-4 bg-soft rounded-2xl p-4">
+        <div class="benefit-icon bg-court/10">⚖️</div>
+        <div>
+          <p class="font-bold text-ink">Melhora o equilíbrio</p>
+          <p class="text-sm text-ink/65 mt-0.5">A criança aprende a controlar o próprio corpo e se mover com segurança.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 bg-soft rounded-2xl p-4">
+        <div class="benefit-icon bg-ball/10">🎯</div>
+        <div>
+          <p class="font-bold text-ink">Desenvolve a coordenação motora</p>
+          <p class="text-sm text-ink/65 mt-0.5">Mãos, olhos e pés trabalhando juntos de forma progressiva e divertida.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 bg-soft rounded-2xl p-4">
+        <div class="benefit-icon bg-sun/20">🧠</div>
+        <div>
+          <p class="font-bold text-ink">Estimula a concentração</p>
+          <p class="text-sm text-ink/65 mt-0.5">Cada desafio exige foco e atenção, treinando o cérebro ao mesmo tempo que brinca.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 bg-soft rounded-2xl p-4">
+        <div class="benefit-icon bg-grass/10">🧍</div>
+        <div>
+          <p class="font-bold text-ink">Trabalha a percepção corporal</p>
+          <p class="text-sm text-ink/65 mt-0.5">A criança aprende onde está o seu corpo no espaço, reduzindo quedas e tropeços.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 bg-soft rounded-2xl p-4">
+        <div class="benefit-icon bg-ball/10">💥</div>
+        <div>
+          <p class="font-bold text-ink">Gasta energia de forma saudável</p>
+          <p class="text-sm text-ink/65 mt-0.5">15 minutos de desafio liberam a energia represada e deixam a criança mais tranquila.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 bg-soft rounded-2xl p-4">
+        <div class="benefit-icon bg-court/10">📵</div>
+        <div>
+          <p class="font-bold text-ink">Reduz o tempo de telas</p>
+          <p class="text-sm text-ink/65 mt-0.5">Atividade física divertida que concorre de verdade com celular e TV.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 bg-soft rounded-2xl p-4">
+        <div class="benefit-icon bg-sun/20">🏆</div>
+        <div>
+          <p class="font-bold text-ink">Fortalece a autoconfiança</p>
+          <p class="text-sm text-ink/65 mt-0.5">Superar cada nível cria uma criança mais segura, motivada e feliz.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 4. PRODUTO + INCLUSO ═══════ -->
+<section class="py-12 bg-soft" id="incluso">
+  <div class="max-w-2xl mx-auto px-5 text-center">
+    <p class="text-ball font-extrabold text-sm uppercase tracking-wide">A solução que você estava procurando</p>
+    <h2 class="font-display text-2xl md:text-3xl font-extrabold mt-2">Conheça os <span class="text-court">50 Desafios com Bolas</span></h2>
+    <p class="mt-3 text-ink/70 max-w-xl mx-auto">Equilíbrio, coordenação e diversão em desafios simples e progressivos que qualquer pai ou mãe consegue aplicar usando qualquer bola que já tem em casa.</p>
+
+    <!-- 4 benefícios rápidos -->
+    <div class="grid grid-cols-2 gap-3 mt-7 text-left">
+      <div class="bg-white rounded-2xl p-4 shadow-sm">
+        <span class="text-2xl">⚡</span>
+        <h3 class="font-display font-bold text-base mt-1">10 a 15 minutos</h3>
+        <p class="text-xs text-ink/65 mt-1">Sem preparação: escolheu, pegou a bola, começou.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-4 shadow-sm">
+        <span class="text-2xl">📈</span>
+        <h3 class="font-display font-bold text-base mt-1">Progressão em 3 níveis</h3>
+        <p class="text-xs text-ink/65 mt-1">Do iniciante ao avançado, no ritmo de cada criança.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-4 shadow-sm">
+        <span class="text-2xl">🏠</span>
+        <h3 class="font-display font-bold text-base mt-1">Qualquer bola serve</h3>
+        <p class="text-xs text-ink/65 mt-1">De meia, de futebol, de tênis ou de plástico.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-4 shadow-sm">
+        <span class="text-2xl">📱</span>
+        <h3 class="font-display font-bold text-base mt-1">Acesso em qualquer tela</h3>
+        <p class="text-xs text-ink/65 mt-1">Imediato e vitalício no celular, tablet ou computador.</p>
+      </div>
+    </div>
+
+    <!-- Checklist incluso -->
+    <div class="bg-court text-white rounded-3xl p-6 mt-7 text-left">
+      <h3 class="font-display text-xl font-extrabold text-center">🎁 Tudo que está incluso no seu acesso</h3>
+      <ul class="mt-5 space-y-3.5 text-sm max-w-xl mx-auto">
+        <li class="flex gap-3 items-start"><span class="text-sun font-extrabold mt-0.5 flex-shrink-0">✓</span> Guia interativo com os 50 Desafios com Bolas organizados por objetivo: equilíbrio, coordenação e diversão em grupo</li>
+        <li class="flex gap-3 items-start"><span class="text-sun font-extrabold mt-0.5 flex-shrink-0">✓</span> Desafios por faixa etária (3 a 10 anos) com instruções passo a passo ilustradas</li>
+        <li class="flex gap-3 items-start"><span class="text-sun font-extrabold mt-0.5 flex-shrink-0">✓</span> Progressão em 3 níveis (iniciante, intermediário e avançado) para evolução contínua</li>
+        <li class="flex gap-3 items-start"><span class="text-sun font-extrabold mt-0.5 flex-shrink-0">✓</span> Variações para brincar sozinho, em dupla ou com a família toda</li>
+        <li class="flex gap-3 items-start"><span class="text-sun font-extrabold mt-0.5 flex-shrink-0">✓</span> Acesso imediato via WhatsApp e e-mail após a confirmação do pagamento</li>
+      </ul>
+
+      <!-- Botão dentro do incluso -->
+      <a href="SEU_LINK_CHECKOUT"
+        class="mt-7 block text-center bg-ball hover:bg-orange-600 active:bg-orange-700 text-white font-extrabold text-lg py-4 rounded-2xl shadow-lg shadow-ball/30 transition">
+        ⚽ QUERO OS 50 DESAFIOS AGORA
+      </a>
+      <p class="text-center text-xs text-white/60 mt-3">🔒 Pagamento seguro · Acesso imediato · Garantia de 7 dias</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 5. DEPOIMENTOS (CARROSSEL) ═══════ -->
+<section class="bg-white py-12">
+  <div class="max-w-2xl mx-auto px-5 text-center">
+    <p class="text-court font-extrabold text-sm uppercase tracking-wide">O que as famílias estão dizendo</p>
+    <h2 class="font-display text-2xl md:text-3xl font-extrabold mt-2">Pais e mães que já entraram na brincadeira</h2>
+
+    <!-- Carrossel -->
+    <div class="relative mt-8 overflow-hidden" id="carousel-wrapper">
+      <div id="carousel-track">
+
+        <!-- Depoimento 1 — PAI -->
+        <div class="slide px-2">
+          <div class="bg-soft rounded-2xl p-6 text-left shadow-sm border border-ink/5">
+            <p class="text-sun text-xl">★★★★★</p>
+            <p class="text-sm mt-3 text-ink/80 leading-relaxed">"Fui eu quem comprou o guia e confesso que não acreditei que ia funcionar tão rápido. Em duas semanas meu filho de 5 anos já consegue chutar direto no gol sem tropeçar. A autoestima dele foi lá em cima."</p>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-court flex items-center justify-center text-white font-extrabold text-sm flex-shrink-0">CE</div>
+              <div>
+                <p class="font-bold text-sm">Carlos Eduardo</p>
+                <p class="text-xs text-ink/50">Pai do Miguel · 5 anos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 2 — PAI -->
+        <div class="slide px-2">
+          <div class="bg-soft rounded-2xl p-6 text-left shadow-sm border border-ink/5">
+            <p class="text-sun text-xl">★★★★★</p>
+            <p class="text-sm mt-3 text-ink/80 leading-relaxed">"Meu filho de 7 anos odiava qualquer atividade que envolvia bola por causa das quedas. Depois de 3 semanas com os desafios ele já está pedindo para brincar todo dia antes do jantar. Sensacional."</p>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-ball flex items-center justify-center text-white font-extrabold text-sm flex-shrink-0">RM</div>
+              <div>
+                <p class="font-bold text-sm">Ricardo Mendonça</p>
+                <p class="text-xs text-ink/50">Pai do Théo · 7 anos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 3 — PAI -->
+        <div class="slide px-2">
+          <div class="bg-soft rounded-2xl p-6 text-left shadow-sm border border-ink/5">
+            <p class="text-sun text-xl">★★★★★</p>
+            <p class="text-sm mt-3 text-ink/80 leading-relaxed">"Eu queria um jeito de brincar com minha filha sem precisar inventar tudo do zero. O guia é exatamente isso: chego em casa, abro o celular e já sei o que vamos fazer. Ela mal vê o celular desde que começamos."</p>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-grass flex items-center justify-center text-white font-extrabold text-sm flex-shrink-0">FS</div>
+              <div>
+                <p class="font-bold text-sm">Fernando Souza</p>
+                <p class="text-xs text-ink/50">Pai da Sofia · 6 anos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 4 — PAI -->
+        <div class="slide px-2">
+          <div class="bg-soft rounded-2xl p-6 text-left shadow-sm border border-ink/5">
+            <p class="text-sun text-xl">★★★★★</p>
+            <p class="text-sm mt-3 text-ink/80 leading-relaxed">"Comprei desconfiado. Pensei 'é só um PDF com atividades'. Mas a progressão por nível faz toda a diferença. Meu filho foi do nível iniciante pro intermediário em menos de um mês e não queria parar de brincar."</p>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-court flex items-center justify-center text-white font-extrabold text-sm flex-shrink-0">MP</div>
+              <div>
+                <p class="font-bold text-sm">Marcelo Peixoto</p>
+                <p class="text-xs text-ink/50">Pai do Lucas · 8 anos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 5 — PAI -->
+        <div class="slide px-2">
+          <div class="bg-soft rounded-2xl p-6 text-left shadow-sm border border-ink/5">
+            <p class="text-sun text-xl">★★★★★</p>
+            <p class="text-sm mt-3 text-ink/80 leading-relaxed">"O pediatra falou que meu filho de 4 anos estava atrasado na coordenação. Além da fono, comprei esse guia. Em um mês ele já consegue quicar a bola 5 vezes seguidas. O médico ficou impressionado na próxima consulta."</p>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-ball flex items-center justify-center text-white font-extrabold text-sm flex-shrink-0">AT</div>
+              <div>
+                <p class="font-bold text-sm">André Teles</p>
+                <p class="text-xs text-ink/50">Pai do Davi · 4 anos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 6 — PAI -->
+        <div class="slide px-2">
+          <div class="bg-soft rounded-2xl p-6 text-left shadow-sm border border-ink/5">
+            <p class="text-sun text-xl">★★★★★</p>
+            <p class="text-sm mt-3 text-ink/80 leading-relaxed">"Minha filha tinha vergonha de jogar bola com os primos porque sempre errava. Hoje ela lidera as brincadeiras. Ver a confiança que ela ganhou não tem preço. Melhor investimento que fiz nos últimos meses."</p>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-grass flex items-center justify-center text-white font-extrabold text-sm flex-shrink-0">RB</div>
+              <div>
+                <p class="font-bold text-sm">Rafael Barbosa</p>
+                <p class="text-xs text-ink/50">Pai da Valentina · 6 anos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 7 — PAI -->
+        <div class="slide px-2">
+          <div class="bg-soft rounded-2xl p-6 text-left shadow-sm border border-ink/5">
+            <p class="text-sun text-xl">★★★★★</p>
+            <p class="text-sm mt-3 text-ink/80 leading-relaxed">"Trabalho o dia todo e quando chego em casa quero aproveitar com qualidade. Esses 15 minutos de desafio viraram o momento mais esperado do dia pelo meu filho. Ele já está me esperando com a bola na mão quando chego."</p>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-court flex items-center justify-center text-white font-extrabold text-sm flex-shrink-0">BN</div>
+              <div>
+                <p class="font-bold text-sm">Bruno Nascimento</p>
+                <p class="text-xs text-ink/50">Pai do Gabriel · 5 anos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 8 — MÃE -->
+        <div class="slide px-2">
+          <div class="bg-soft rounded-2xl p-6 text-left shadow-sm border border-ink/5">
+            <p class="text-sun text-xl">★★★★★</p>
+            <p class="text-sm mt-3 text-ink/80 leading-relaxed">"Meu filho de 7 anos não conseguia pegar a bola de jeito nenhum e se frustrava muito. Depois de 3 semanas seguindo os desafios, ele pegou a bola com as duas mãos pela primeira vez e gritou de alegria. Eu quase chorei."</p>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-ball flex items-center justify-center text-white font-extrabold text-sm flex-shrink-0">MC</div>
+              <div>
+                <p class="font-bold text-sm">Mariana Costa</p>
+                <p class="text-xs text-ink/50">Mãe do Pedro · 7 anos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 9 — MÃE -->
+        <div class="slide px-2">
+          <div class="bg-soft rounded-2xl p-6 text-left shadow-sm border border-ink/5">
+            <p class="text-sun text-xl">★★★★★</p>
+            <p class="text-sm mt-3 text-ink/80 leading-relaxed">"Sou mãe de duas crianças de 4 e 6 anos e o guia funciona para as duas ao mesmo tempo, cada uma no seu nível. A mais nova fica no iniciante e o mais velho no intermediário. Uma mão na roda!"</p>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-grass flex items-center justify-center text-white font-extrabold text-sm flex-shrink-0">JL</div>
+              <div>
+                <p class="font-bold text-sm">Juliana Lima</p>
+                <p class="text-xs text-ink/50">Mãe da Ana e do Nico · 4 e 6 anos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 10 — MÃE -->
+        <div class="slide px-2">
+          <div class="bg-soft rounded-2xl p-6 text-left shadow-sm border border-ink/5">
+            <p class="text-sun text-xl">★★★★★</p>
+            <p class="text-sm mt-3 text-ink/80 leading-relaxed">"O melhor foi ver meu filho de 9 anos, que antes só queria tablet, pedindo para repetir o desafio do dia. Ele mesmo foi pesquisar o nível avançado! A atividade vira um jogo e a criança não percebe que está se desenvolvendo."</p>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-court flex items-center justify-center text-white font-extrabold text-sm flex-shrink-0">CR</div>
+              <div>
+                <p class="font-bold text-sm">Camila Rocha</p>
+                <p class="text-xs text-ink/50">Mãe do Mateus · 9 anos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /carousel-track -->
+    </div>
+
+    <!-- Dots -->
+    <div class="flex items-center justify-center gap-1.5 mt-5" id="dots-container">
+      <button class="dot active" onclick="goToSlide(0);resetAuto()"></button>
+      <button class="dot" onclick="goToSlide(1);resetAuto()"></button>
+      <button class="dot" onclick="goToSlide(2);resetAuto()"></button>
+      <button class="dot" onclick="goToSlide(3);resetAuto()"></button>
+      <button class="dot" onclick="goToSlide(4);resetAuto()"></button>
+      <button class="dot" onclick="goToSlide(5);resetAuto()"></button>
+      <button class="dot" onclick="goToSlide(6);resetAuto()"></button>
+      <button class="dot" onclick="goToSlide(7);resetAuto()"></button>
+      <button class="dot" onclick="goToSlide(8);resetAuto()"></button>
+      <button class="dot" onclick="goToSlide(9);resetAuto()"></button>
+    </div>
+
+    <!-- Setas -->
+    <div class="flex items-center justify-center gap-3 mt-4">
+      <button onclick="prevSlide();resetAuto()" class="w-10 h-10 rounded-full bg-soft border border-ink/10 flex items-center justify-center text-ink hover:bg-court hover:text-white hover:border-court transition text-base" aria-label="Anterior">‹</button>
+      <span class="text-xs text-ink/40" id="slide-counter">1 / 10</span>
+      <button onclick="nextSlide();resetAuto()" class="w-10 h-10 rounded-full bg-soft border border-ink/10 flex items-center justify-center text-ink hover:bg-court hover:text-white hover:border-court transition text-base" aria-label="Próximo">›</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════ 6. PREÇO + GARANTIA ═══════ -->
+<section id="preco" class="py-12 bg-soft">
+  <div class="max-w-lg mx-auto px-5 text-center">
+    <p class="text-ball font-extrabold text-sm uppercase tracking-wide">Invista no desenvolvimento do seu filho</p>
+    <h2 class="font-display text-2xl md:text-3xl font-extrabold mt-2">Garanta seu acesso agora</h2>
+
+    <div class="bg-white border-2 border-court/15 rounded-3xl shadow-xl shadow-court/10 p-7 mt-7">
+      <span class="bg-sun/20 text-ink text-xs font-extrabold px-4 py-1.5 rounded-full">🔥 Acesso completo e vitalício</span>
+      <p class="text-ink/50 line-through mt-4">De R$ 97,00</p>
+      <p class="font-display text-6xl font-extrabold text-court leading-none mt-1">R$ 47<span class="text-2xl">,00</span></p>
+      <p class="text-sm text-ink/60 mt-2">Pagamento único ou em até <strong>8×</strong> no cartão</p>
+
+      <a href="SEU_LINK_CHECKOUT"
+        class="mt-6 block bg-ball hover:bg-orange-600 active:bg-orange-700 text-white font-extrabold text-lg py-4 rounded-2xl shadow-lg shadow-ball/30 transition">
+        ⚽ QUERO OS 50 DESAFIOS AGORA
+      </a>
+      <p class="text-xs text-ink/50 mt-3">💳 Cartão de crédito (8×) · 📱 PIX · 🔒 Pagamento seguro</p>
+    </div>
+
+    <div class="bg-grass/10 border border-grass/30 rounded-2xl p-5 mt-6 text-left flex gap-4">
+      <span class="text-4xl flex-shrink-0">🛡️</span>
+      <div>
+        <h3 class="font-display font-extrabold text-grass">Garantia de 7 dias sem risco</h3>
+        <p class="text-sm text-ink/70 mt-1">Se por qualquer motivo você não ficar satisfeita, é só mandar uma mensagem em até <strong>7 dias</strong> após a compra e devolvemos <strong>100% do seu dinheiro</strong>. Sem burocracia, sem perguntas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 7. FAQ ═══════ -->
+<section class="bg-white py-12">
+  <div class="max-w-2xl mx-auto px-5">
+    <h2 class="font-display text-2xl md:text-3xl font-extrabold text-center">Perguntas frequentes</h2>
+    <div class="mt-7 space-y-3">
+
+      <div class="faq bg-soft rounded-2xl border border-ink/5">
+        <button onclick="this.parentElement.classList.toggle('open')" class="w-full flex justify-between items-center gap-4 px-5 py-4 font-bold text-left text-sm md:text-base">
+          Para qual faixa etária é indicado? <span class="faq-icon text-court text-lg">▼</span>
+        </button>
+        <div class="accordion-content"><p class="px-5 pb-4 text-sm text-ink/70">Para crianças de 3 a 10 anos. Cada desafio indica a faixa etária ideal e traz variações mais fáceis ou mais difíceis para adaptar à sua criança.</p></div>
+      </div>
+
+      <div class="faq bg-soft rounded-2xl border border-ink/5">
+        <button onclick="this.parentElement.classList.toggle('open')" class="w-full flex justify-between items-center gap-4 px-5 py-4 font-bold text-left text-sm md:text-base">
+          Preciso de bolas especiais ou equipamentos? <span class="faq-icon text-court text-lg">▼</span>
+        </button>
+        <div class="accordion-content"><p class="px-5 pb-4 text-sm text-ink/70">Não! Qualquer bola que você tiver em casa funciona: de futebol, de plástico, de tênis ou até uma bola de meia. Os desafios foram pensados para o que você já tem.</p></div>
+      </div>
+
+      <div class="faq bg-soft rounded-2xl border border-ink/5">
+        <button onclick="this.parentElement.classList.toggle('open')" class="w-full flex justify-between items-center gap-4 px-5 py-4 font-bold text-left text-sm md:text-base">
+          Como funciona o acesso? É um PDF ou um site? <span class="faq-icon text-court text-lg">▼</span>
+        </button>
+        <div class="accordion-content"><p class="px-5 pb-4 text-sm text-ink/70">É um guia interativo que funciona como um site. O acesso é imediato após a confirmação do pagamento, chega por WhatsApp e e-mail, funciona em qualquer aparelho e é vitalício: pague uma vez e use para sempre.</p></div>
+      </div>
+
+      <div class="faq bg-soft rounded-2xl border border-ink/5">
+        <button onclick="this.parentElement.classList.toggle('open')" class="w-full flex justify-between items-center gap-4 px-5 py-4 font-bold text-left text-sm md:text-base">
+          E se eu não gostar? Posso pedir reembolso? <span class="faq-icon text-court text-lg">▼</span>
+        </button>
+        <div class="accordion-content"><p class="px-5 pb-4 text-sm text-ink/70">Sim! Você tem 7 dias de garantia. Se não ficar satisfeita, devolvemos 100% do valor pago. É só nos enviar uma mensagem, sem perguntas e sem burocracia.</p></div>
+      </div>
+
+      <div class="faq bg-soft rounded-2xl border border-ink/5">
+        <button onclick="this.parentElement.classList.toggle('open')" class="w-full flex justify-between items-center gap-4 px-5 py-4 font-bold text-left text-sm md:text-base">
+          Substitui acompanhamento com especialista? <span class="faq-icon text-court text-lg">▼</span>
+        </button>
+        <div class="accordion-content"><p class="px-5 pb-4 text-sm text-ink/70">Não. O guia é um recurso complementar para estimular o desenvolvimento em casa, brincando. Se houver suspeita de alguma condição específica, o acompanhamento profissional é sempre recomendado.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 8. CTA FINAL ═══════ -->
+<section class="bg-court text-white py-14">
+  <div class="max-w-xl mx-auto px-5 text-center">
+    <h2 class="font-display text-3xl md:text-4xl font-extrabold leading-tight">
+      Uma bola. 15 minutos. <span class="text-sun">Uma infância em movimento.</span>
+    </h2>
+    <p class="mt-3 text-white/80">Enquanto a tela rouba horas, cada desafio devolve equilíbrio, coordenação e risada. Comece hoje com o que você já tem em casa.</p>
+    <a href="SEU_LINK_CHECKOUT"
+      class="bounce-soft mt-7 inline-block bg-ball hover:bg-orange-600 active:bg-orange-700 text-white font-extrabold text-lg px-9 py-4 rounded-2xl shadow-lg transition w-full sm:w-auto">
+      🚀 SIM! QUERO COMEÇAR OS DESAFIOS HOJE
+    </a>
+    <p class="mt-3 text-xs text-white/60">🔒 Pagamento seguro · Acesso imediato · Garantia de 7 dias</p>
+  </div>
+</section>
+
+<footer class="bg-ink text-white/45 text-xs text-center px-5 py-8">
+  <p>© 2026 50 Desafios com Bolas · Todos os direitos reservados</p>
+  <p class="mt-2 max-w-xl mx-auto">Este produto é 100% digital. Os resultados podem variar de acordo com a consistência de uso e as características individuais de cada criança.</p>
+</footer>
+
+<!-- ⚙️ PIXEL META: cole aqui o código do seu pixel antes de subir no ar -->
+
+<script>
+// ── Carrossel ─────────────────────────────────────────────────────────────────
+const TOTAL   = 10;
+let current   = 0;
+let autoTimer = null;
+const track   = document.getElementById('carousel-track');
+const dots    = document.querySelectorAll('.dot');
+const counter = document.getElementById('slide-counter');
+
+function goToSlide(n) {
+  current = ((n % TOTAL) + TOTAL) % TOTAL;
+  track.style.transform = 'translateX(-' + (current * 100) + '%)';
+  dots.forEach((d, i) => {
+    d.classList.toggle('active', i === current);
+  });
+  counter.textContent = (current + 1) + ' / ' + TOTAL;
+}
+
+function nextSlide() { goToSlide(current + 1); }
+function prevSlide() { goToSlide(current - 1); }
+
+function startAuto() { autoTimer = setInterval(nextSlide, 7000); }
+function resetAuto() { clearInterval(autoTimer); startAuto(); }
+
+// Touch swipe para mobile
+let touchX = 0;
+track.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+track.addEventListener('touchend', e => {
+  const diff = touchX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 45) { diff > 0 ? nextSlide() : prevSlide(); resetAuto(); }
+});
+
+// Pausar ao segurar o dedo parado
+track.addEventListener('touchmove', () => clearInterval(autoTimer), { passive: true });
+track.addEventListener('touchend', () => startAuto(), { passive: true });
+
+startAuto();
+</script>
+
+</body>
+</html>
